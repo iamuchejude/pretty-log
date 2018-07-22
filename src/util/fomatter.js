@@ -1,4 +1,4 @@
-class Format {
+class Formatter {
   constructor($string) {
     this.str = $string;
     this.formatUrl();
@@ -21,4 +21,4 @@ class Format {
   }
 }
 
-export default Format;
+export default Formatter;
