@@ -1,0 +1,41 @@
+{
+  "name": "pretty-log",
+  "version": "1.0.0",
+  "description": "Make pretty use of your terminal",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamuchejude/pretty-log.git"
+  },
+  "keywords": [
+    "console",
+    "logo",
+    "pretty",
+    "warn",
+    "info",
+    "error",
+    "success"
+  ],
+  "author": {
+    "name": "Uche Jude",
+    "email": "iamuchejude@gmail.com",
+    "url": "https://iamuchejude.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamuchejude/pretty-log/issues"
+  },
+  "homepage": "https://github.com/iamuchejude/pretty-log#readme",
+  "devDependencies": {
+    "eslint": "^5.2.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1"
+  }
+}
