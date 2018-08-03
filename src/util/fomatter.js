@@ -1,6 +1,7 @@
 class Formatter {
   constructor($string) {
     this.str = $string;
+
     this.formatUrl();
     this.formatEmail();
     this.formatPhoneNumber();

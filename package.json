@@ -2,10 +2,15 @@
   "name": "pretty-log",
   "version": "1.0.0",
   "description": "Make pretty use of your terminal",
-  "main": "./dist/index.js",
+  "main": "./build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --lint"
+    "lint": "eslint --lint",
+    "clean:build": "rimraft ./build",
+    "clean:src": "rimraft ./src",
+    "build": "npm run clean && mkdir build && npm run build:config && npm run build:src && npm run clean:src",
+    "build:src": "babel src -d build && babel --presets es2015 env src -d build",
+    "build:config": "babel config/index.js -d ./build/config.js && babel --presets es2015 env config/index.js -d ./build/config.js"
   },
   "repository": {
     "type": "git",
@@ -37,6 +42,7 @@
   },
   "dependencies": {
     "chalk": "^2.4.1",
-    "moment": "^2.22.2"
+    "moment": "^2.22.2",
+    "npm": "^6.2.0"
   }
 }
